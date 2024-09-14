@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Solutions | Elite Advertising</title>
+    <style>
+        /* Basic reset and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .service-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .service-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-content h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .service-content p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .service-images {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service-images img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.5s ease;
+        }
+
+        /* Animation effect */
+        .animated-img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .service-images img {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <section class="service-section">
+        <div class="service-content">
+            <h2>Digital Solutions</h2>
+            <p>
+                At Elite Advertising, we offer comprehensive digital solutions to help your business thrive in the digital landscape. From crafting innovative strategies to providing cutting-edge tools, we ensure that your brand remains relevant and competitive in today's tech-driven world. Whether it’s digital marketing, SEO, or data-driven analytics, we create customized solutions tailored to your business needs, ensuring maximum online visibility and engagement.
+            </p>
+        </div>
+        <div class="service-images">
+            <img src="digitalchitra.jpg" alt="Digital Marketing" class="animated-img">
+            <img src="digitalchira2.jpg" alt="SEO" class="animated-img">
+            <img src="digitalchitra3.jpg" alt="Analytics" class="animated-img">
+        </div>
+    </section>
+</body>
+</html>

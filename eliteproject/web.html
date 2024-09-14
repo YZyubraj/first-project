@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development | Elite Advertising</title>
+    <style>
+        /* Basic reset and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .service-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .service-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-content h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .service-content p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .service-images {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-images img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            transition: transform 0.6s ease, opacity 0.6s ease;
+        }
+
+        /* Unique animation effects */
+        .animated-img {
+            animation: bounceIn 1s ease-out, fadeIn 1s ease-in-out;
+        }
+
+        @keyframes bounceIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .service-images img:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <section class="service-section">
+        <div class="service-content">
+            <h2>Web Development</h2>
+            <p>
+                Our web development services ensure that your business has a professional, functional, and responsive website. We specialize in creating websites that are not only visually appealing but also optimized for performance and user experience. Whether you need a simple corporate site or a complex e-commerce platform, we ensure your website meets modern web standards and provides an excellent experience for your visitors.
+            </p>
+        </div>
+        <div class="service-images">
+            <img src="webchitra.jpg" alt="Corporate Website" class="animated-img">
+            <img src="webchitra2.jpg" alt="E-commerce Platform" class="animated-img">
+            <img src="webchitra3.jpg" alt="Responsive Design" class="animated-img">
+        </div>
+    </section>
+</body>
+</html>

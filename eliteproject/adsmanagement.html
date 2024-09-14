@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising Campaign - Elite Advertising</title>
+    <header>
+        <h1><center>Ads Managemant</center></h1>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            box-sizing: border-box;
+        }
+
+        /* Service Section */
+        .service-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Service Block - Container for each image and text */
+        .service-block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        /* Alternate flex direction for odd service blocks */
+        .service-block:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        /* Image Styling */
+        .service-block img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.5s ease;
+            margin-right: 20px;
+        }
+
+        /* Slide-in animation */
+        @keyframes slideLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-left {
+            animation: slideLeft 1s ease forwards;
+        }
+
+        /* Service Content Styling */
+        .service-content {
+            max-width: 700px;
+        }
+
+        .service-content h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-content p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Add some hover effect for the images */
+        .service-block img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="service-section">
+        <!-- Service Block 1 -->
+        <div class="service-block">
+            <img src="adschitra.jpg" alt="Campaign Strategy" class="slide-left">
+            <div class="service-content">
+                <h3>Comprehensive Campaign Strategy</h3>
+                <p>We develop a strategic plan tailored to your brand’s objectives, market positioning, and target audience. Our approach ensures that every aspect of the campaign aligns with your business goals and resonates with your customers.</p>
+            </div>
+        </div>
+
+        <!-- Service Block 2 -->
+        <div class="service-block">
+            <img src="adschitra2.jpg" alt="Creative Concept Development" class="slide-left">
+            <div class="service-content">
+                <h3>Creative Concept Development</h3>
+                <p>Our team of creative professionals brings fresh and innovative ideas to the table. From eye-catching visuals to compelling messages, we design campaigns that capture attention and engage your audience.</p>
+            </div>
+        </div>
+
+        <!-- Service Block 3 -->
+        <div class="service-block">
+            <img src="adschitra3.jpg" alt="Multi-Channel Advertising" class="slide-left">
+            <div class="service-content">
+                <h3>Multi-Channel Advertising</h3>
+                <p>To maximize your reach, we utilize a variety of channels including digital platforms (social media, email, PPC), traditional media (TV, radio, print), and outdoor advertising. Our multi-channel approach ensures that your campaign reaches potential customers wherever they are.</p>
+            </div>
+        </div>
+
+        <!-- Service Block 4 -->
+        <div class="service-block">
+            <img src="adschitra4.jpg" alt="Performance Tracking" class="slide-left">
+            <div class="service-content">
+                <h3>Performance Tracking & Analytics</h3>
+                <p>We continuously monitor performance through advanced analytics and metrics, providing you with detailed reports and insights to measure success and optimize strategies.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        // Add the animation to images on window load
+        window.addEventListener('load', () => {
+            const images = document.querySelectorAll('.slide-left');
+            images.forEach((img, index) => {
+                img.style.animationDelay = `${index * 0.2}s`; // Staggered animation
+            });
+        });
+    </script>
+
+</body>
+</html>

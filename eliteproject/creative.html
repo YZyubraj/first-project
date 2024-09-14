@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Strategies | Elite Advertising</title>
+    <style>
+        /* Basic reset and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .service-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .service-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-content h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .service-content p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .service-images {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-images img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            transition: transform 0.6s ease, opacity 0.6s ease;
+        }
+
+        /* Flip and fade-in animation */
+        .flip-fade {
+            animation: flipFadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes flipFadeIn {
+            from {
+                transform: rotateY(90deg);
+                opacity: 0;
+            }
+            to {
+                transform: rotateY(0);
+                opacity: 1;
+            }
+        }
+
+        .service-images img:hover {
+            transform: scale(1.05) rotateY(10deg);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <section class="service-section">
+        <div class="service-content">
+            <h2>Creative Strategies</h2>
+            <p>
+                At the heart of every successful campaign is a great idea. Our team develops creative strategies tailored to your brand’s identity, ensuring your message stands out. Whether you need a creative concept for a campaign or a long-term branding strategy, our creative professionals work closely with you to create impactful and memorable campaigns that resonate with your target audience.
+            </p>
+        </div>
+        <div class="service-images">
+            <img src="creativechitra.jpg" alt="Campaign Concepts" class="flip-fade">
+            <img src="creativechitra2.jpg" alt="Branding Strategy" class="flip-fade">
+            <img src="creativechitra3.jpg" alt="Impactful Campaigns" class="flip-fade">
+        </div>
+    </section>
+</body>
+</html>

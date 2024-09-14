@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk SMS | Elite Advertising</title>
+    <style>
+        /* Basic reset and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .service-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .service-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-content h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .service-content p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .service-images {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-images img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            transition: transform 0.6s ease, opacity 0.6s ease;
+        }
+
+        /* Unique animation effects */
+        .animated-img {
+            animation: rotateIn 1s ease-out, fadeIn 1s ease-in-out;
+        }
+
+        @keyframes rotateIn {
+            from {
+                transform: rotate(-360deg);
+                opacity: 0;
+            }
+            to {
+                transform: rotate(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .service-images img:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <section class="service-section">
+        <div class="service-content">
+            <h2>Bulk SMS</h2>
+            <p>
+                Reach thousands of potential customers instantly with our bulk SMS service. Elite Advertising provides an easy, efficient, and cost-effective way to send promotional messages, alerts, and updates directly to your customers’ phones. With a high open rate, SMS marketing is one of the most powerful tools for immediate engagement, whether you’re launching a product or announcing a special offer.
+            </p>
+        </div>
+        <div class="service-images">
+            <img src="bulkchitra.jpg" alt="SMS Marketing" class="animated-img">
+            <img src="bulkchitra2.jpg" alt="Customer Engagement" class="animated-img">
+            <img src="bulkchitra3.jpg" alt="Promotional Alerts" class="animated-img">
+        </div>
+    </section>
+</body>
+</html>
